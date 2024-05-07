@@ -1,8 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
-// import Clock from './02/Clock';
-import Mydiv from './03/Mydiv';
 import { HiMiniHome } from "react-icons/hi2";
+// import Clock from './02/Clock';
+// import Mydiv from './03/Mydiv';
+import Mylist from './04/Mylist';
 
 function App() {
   return (
@@ -12,8 +13,8 @@ function App() {
         <p className='text-5xl'>K-digital</p>
         <p className='text-3xl'><HiMiniHome /></p>
       </header>
-       <main className='grow'>
-        main
+       <main className='grow flex flex-col justify-center items-center font-bold'>
+          <Mylist/>
        </main>
        <footer className='flex justify-between items-center text-white bg-emerald-900 h-20'>
         footer
