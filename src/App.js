@@ -3,18 +3,19 @@ import './App.css';
 import { HiMiniHome } from "react-icons/hi2";
 // import Clock from './02/Clock';
 // import Mydiv from './03/Mydiv';
-import Mylist from './04/Mylist';
+// import Mylist from './04/Mylist';
+import Lotto from './05/Lotto';
 
 function App() {
   return (
     <div className="flex flex-col w-full max-w-screen-lg h-screen overflow-y-auto mx-auto">
       <header className='flex justify-between items-center text-xl font-bold h-20 p-10 bg-green-200 text-emerald-800'>
-        <p className='text-xl'>React training</p>
+        <p className='text-xl'>React</p>
         <p className='text-5xl'>K-digital</p>
         <p className='text-3xl'><HiMiniHome /></p>
       </header>
        <main className='grow flex flex-col justify-center items-center font-bold'>
-          <Mylist/>
+          <Lotto/>
        </main>
        <footer className='flex justify-between items-center text-white bg-emerald-900 h-20'>
         footer
