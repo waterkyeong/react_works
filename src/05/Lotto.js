@@ -16,7 +16,7 @@ export default function Lotto() {
         }
         let tag = arr.map(item => <Balls n={item} key={item}/>)
 
-        tag.splice(6,0,<span className="text-2xl mx-2" key="sp">+</span>).sort((p, c) => p - c)
+        tag.splice(6,0,<span className="text-2xl mx-2" key="sp">+</span>)
         // console.log(tags)
 
         setTags(tag);

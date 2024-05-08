@@ -4,7 +4,9 @@ import { HiMiniHome } from "react-icons/hi2";
 // import Clock from './02/Clock';
 // import Mydiv from './03/Mydiv';
 // import Mylist from './04/Mylist';
-import Lotto from './05/Lotto';
+// import Lotto from './05/Lotto';
+import Box from './06/Box';
+
 
 function App() {
   return (
@@ -15,7 +17,7 @@ function App() {
         <p className='text-3xl'><HiMiniHome /></p>
       </header>
        <main className='grow flex flex-col justify-center items-center font-bold'>
-          <Lotto/>
+          <Box/>
        </main>
        <footer className='flex justify-between items-center text-white bg-emerald-900 h-20'>
         footer
