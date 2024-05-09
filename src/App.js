@@ -2,10 +2,11 @@ import logo from './logo.svg';
 import './App.css';
 import { HiMiniHome } from "react-icons/hi2";
 // import Clock from './02/Clock';
+import Clock from './02 copy/Clock';
 // import Mydiv from './03/Mydiv';
 // import Mylist from './04/Mylist';
 // import Lotto from './05/Lotto';
-import Box from './06/Box';
+// import Box from './06/Box';
 
 
 function App() {
@@ -17,11 +18,12 @@ function App() {
         <p className='text-3xl'><HiMiniHome /></p>
       </header>
        <main className='grow flex flex-col justify-center items-center font-bold'>
-          {/* <Clock/>
-          <Mydiv/>
+          <Clock/>
+          {/* <Mydiv/>
           <Mylist/>
-          <Lotto/> */}
-          <Box/>
+          <Lotto/>
+          <Box/> */}
+          
        </main>
        <footer className='flex justify-between items-center text-white bg-emerald-900 h-20'>
         footer
