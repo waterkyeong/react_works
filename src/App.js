@@ -17,6 +17,10 @@ function App() {
         <p className='text-3xl'><HiMiniHome /></p>
       </header>
        <main className='grow flex flex-col justify-center items-center font-bold'>
+          {/* <Clock/>
+          <Mydiv/>
+          <Mylist/>
+          <Lotto/> */}
           <Box/>
        </main>
        <footer className='flex justify-between items-center text-white bg-emerald-900 h-20'>
