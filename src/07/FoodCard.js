@@ -11,7 +11,7 @@ export default function FoodCard({data}) {
     //                                     <h2>{item.운영주체명}</h2> 
     //                                     <h3>{item['사업장 소재지']}</h3>
     //                                         </div>)
-    const [isShow, setIsShow] = useState(true)
+    const [isShow, setIsShow] = useState(false)
     const handleShow = ()=>{
         console.log(isShow)
         setIsShow(!isShow)
