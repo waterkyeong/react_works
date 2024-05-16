@@ -83,7 +83,7 @@ export default function TrafficMain() {
     useEffect(()=>{
       console.log('대분류 선택 = ', c1Sel)
       console.log('중분류 선택 = ', c2Sel)
-
+      if(!c1Sel || !c2Sel ) return ;
       let tm = tdata.filter(item => item['사고유형_대분류'] === c1Sel && item['사고유형_중분류'] === c2Sel)
       
       tm = tm[0]
