@@ -24,8 +24,7 @@ export default function Gallery() {
     }
     //컴포넌트 생성시
     useEffect(()=>{
-        let url = `https://apis.data.go.kr/B551011/PhotoGalleryService1/gallerySearchList1?serviceKey=${process.env.REACT_APP_API_KEY}&numOfRows=10&pageNo=1&MobileOS=ETC&MobileApp=AppTest&arrange=A&keyword=%ED%83%9C%EC%A2%85%EB%8C%80&_type=json
-        `
+        let url = `https://apis.data.go.kr/B551011/PhotoGalleryService1/gallerySearchList1?serviceKey=${process.env.REACT_APP_API_KEY}&numOfRows=10&pageNo=1&MobileOS=ETC&MobileApp=AppTest&arrange=A&keyword=%ED%83%9C%EC%A2%85%EB%8C%80&_type=json`
         console.log(url)
         getFetchData(url)
     },[])
@@ -55,11 +54,11 @@ export default function Gallery() {
     // },[])
  
   return (
-    <div className="w-11/12 flex flex-col justify-center items-center">
+    <div className="w-11/12 h-full flex flex-col justify-start items-center">
       <div className="w-full h=full flex justify-center items-center">
-        <input type="d" className="flex justify-center items-center"/>
+        <input type="d"/>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         {gdata && cards}
       </div>
     </div>

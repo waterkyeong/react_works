@@ -4,7 +4,7 @@ export default function GalleryCard({imgUrl, title, content, spTag}) {
     const spTags = (spTag.includes(',') ? spTag.split(',') : [spTag])
                     .map(item => 
                         <span key={item} 
-                              className="inline-flex items-center rounded-md border border-transparent m-1 bg-gray-800 px-3 py-2 text-sm font-medium leading-4 text-white shadow-sm hover:bg-gray-900">
+                              className="inline-flex items-center rounded-2xl border border-transparent m-1 bg-gray-800 px-3 py-2 text-sm font-medium leading-4 text-white shadow-sm hover:bg-gray-900">
                                 {item}
                         </span>
                     )
