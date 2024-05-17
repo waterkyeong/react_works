@@ -16,9 +16,9 @@ export default function BoxOfficeTbody({dailyList, setSelMv}) {
             <td className="whitespace-nowrap px-6 py-4">{item.movieNm}</td>
             <td className="whitespace-nowrap px-6 py-4">{parseInt(item.salesAcc).toLocaleString()}</td>
             <td className="whitespace-nowrap px-6 py-4">{parseInt(item.audiAcc).toLocaleString()}</td>
-            <td className="whitespace-nowrap px-6 py-4 text-lg flex justify-center items-center font-bold">
-            <span>{item.rankInten > 0 ? <TiArrowUpThick className=" text-lime-500"/> : item.rankInten< 0 ? <TiArrowDownThick className=" text-emerald-500" /> : '-'}</span> 
-            <span>{item.rankInten !=0 && Math.abs(item.rankInten)}</span> </td>
+            <td className="whitespace-nowrap px-6 py-4 text-xl flex justify-center items-center font-bold">
+                                                                                                                <span>{item.rankInten > 0 ? <TiArrowUpThick className=" text-lime-500"/> : item.rankInten< 0 ? <TiArrowDownThick className=" text-emerald-500" /> : '-'}</span> 
+                                                                                                                <span>{item.rankInten !=0 && Math.abs(item.rankInten)}</span> </td>
         </tr>
     )
   return (

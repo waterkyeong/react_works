@@ -10,7 +10,8 @@ import { HiMiniHome } from "react-icons/hi2";
 // import FoodMain from './07/FoodMain';
 // import TrafficMain from './08/TrafficMain';
 // import TrafficM from './08 _1/TrafficM';
-import MyRdf from './09/MyRdf';
+// import MyRdf from './09/MyRdf';
+import Gallery from './10/Gallery';
 
 function App() {
   return (
@@ -29,7 +30,8 @@ function App() {
           {/* <FoodMain/>  */}
           {/* <TrafficMain/> */}
           {/* <TrafficM/> */}
-          <MyRdf/>
+          {/* <MyRdf/> */}
+          <Gallery/>
        </main>
        <footer className='flex justify-between items-center text-white bg-emerald-900 h-20'>
         footer

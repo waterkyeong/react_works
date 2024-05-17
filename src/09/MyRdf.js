@@ -38,7 +38,7 @@ export default function MyRdf() {
 
         x3.current.value = parseInt(x1.current.value) + parseInt(x2.current.value)
     }
-
+ 
     //변수 변경시
     useEffect(()=>{
         console.log("sVal =", sVal)
