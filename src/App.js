@@ -11,7 +11,8 @@ import { HiMiniHome } from "react-icons/hi2";
 // import TrafficMain from './08/TrafficMain';
 // import TrafficM from './08 _1/TrafficM';
 // import MyRdf from './09/MyRdf';
-import Gallery from './10/Gallery';
+// import Gallery from './10/Gallery';
+import Festival from './11/Festival';
 
 function App() {
   return (
@@ -31,7 +32,8 @@ function App() {
           {/* <TrafficMain/> */}
           {/* <TrafficM/> */}
           {/* <MyRdf/> */}
-          <Gallery/>
+          {/* <Gallery/> */}
+          <Festival/>
        </main>
        <footer className='flex justify-between items-center text-white bg-emerald-900 h-20'>
         footer
