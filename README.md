@@ -1,4 +1,4 @@
-vercel posting - https://react-works-mu.vercel.app/phome
+vercel hosting - https://react-works-mu.vercel.app/phome
 
 
 
