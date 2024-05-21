@@ -53,11 +53,12 @@ function App() {
               <Link to='/pfestival'>부산축제</Link>
             </li>
           </ul>
-          <p className='text-3xl'><Link to=''><HiMiniHome /></Link></p>
+          <p className='text-3xl'><Link to='/phome'><HiMiniHome /></Link></p>
         </header>
         <main className='grow flex flex-col justify-center items-center font-bold'>
             {/* <RouteMain/> */}
         <Routes>
+            
             <Route path="/pclock" element={<Clock/>}/>{/* <Clock/>  */}
             <Route path="/1" element={<Mydiv/>}/>{/*<Mydiv/>*/}
             <Route path="/plang" element={<Mylist/>}/>{/*<Mylist/> */}
