@@ -16,6 +16,9 @@ import MyRdf from './09/MyRdf';
 import Gallery from './10/Gallery';
 import Festival from './11/Festival';
 // import RouteMain from './12/RouteMain';
+import Frcst from './13/Frcst';
+import FrcstList from './13/FrcstList';
+import Hi from './extra/Hi';
 
 function App() {
   return (
@@ -52,13 +55,16 @@ function App() {
             <li className='m-2 p-2'>      
               <Link to='/pfestival'>부산축제</Link>
             </li>
+            <li className='m-2 p-2'>      
+              <Link to='/pclimate'>단기예보</Link>
+            </li>
           </ul>
-          <p className='text-3xl'><Link to='/phome'><HiMiniHome /></Link></p>
+          <p className='text-3xl'><Link to='/'><HiMiniHome /></Link></p>
         </header>
         <main className='grow flex flex-col justify-center items-center font-bold'>
             {/* <RouteMain/> */}
         <Routes>
-            
+            <Route path='/' element={<Hi/>}/>
             <Route path="/pclock" element={<Clock/>}/>{/* <Clock/>  */}
             <Route path="/1" element={<Mydiv/>}/>{/*<Mydiv/>*/}
             <Route path="/plang" element={<Mylist/>}/>{/*<Mylist/> */}
@@ -69,6 +75,8 @@ function App() {
             <Route path="/pplus" element={<MyRdf/>}/>{/* <MyRdf/> */}
             <Route path="/ptour" element={<Gallery/>}/>{/* <Gallery/> */}
             <Route path="/pfestival" element={<Festival/>}/>{/* <Festival/> */}
+            <Route path="/pclimate" element={<Frcst/>}/>
+            <Route path="/pclimatelist" element={<FrcstList/>}/>
         </Routes> 
         </main>
           <footer className='flex justify-between items-center text-white bg-emerald-900 h-20'>
