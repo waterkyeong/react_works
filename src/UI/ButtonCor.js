@@ -16,7 +16,7 @@ export default function ButtonCor({caption, bcolor, handleClick}) {
 
   return (
     <button className= {`inline-flex px-10 py-3 justify-center items-center 
-                        rounded-md text-teal-400
+                        rounded-md text-teal-400 m-2
                         font-bold ${colorB[bcolor]} ${colorBHover[bcolor]}`} 
             onClick={handleClick}>
       

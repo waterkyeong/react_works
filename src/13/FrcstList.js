@@ -84,7 +84,7 @@ export default function FrcstList() {
     }, [selItem])
 
     return (
-        <div className="w-11/12 h-full flex flex-col justify-start items-center ">
+        <div className="w-11/12 flex flex-col justify-start items-center ">
             <div className="w-full flex m-5">
                 <div className="w-2/4 flex justify-center items-center text-xl font-bold">
                     <Link to='/pclimate'>  {dt} {area} {gubun}예보</Link>
@@ -93,9 +93,9 @@ export default function FrcstList() {
                     <TailSelect id="pc" ops={ops} selRef={ref} iniText="항목선택" handleChange={handleSelect} />
                 </div>
             </div>
-            <table className="w-11/12 text-left text-sm font-light text-surface">
+            <table className="w-11/12 text-sm font-light">
 
-                <thead className="border-b border-neutral-200 font-medium dark:border-white/10  ">
+                <thead className="border-b border-neutral-200 font-medium dark:border-white/10">
                     <tr className="bg-teal-900 text-green-300">
                         <th scope="col" className="px-6 py-3 text-center">항목명</th>
                         <th scope="col" className="px-6 py-3 text-center">예측일자</th>

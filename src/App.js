@@ -19,6 +19,8 @@ import Festival from './11/Festival';
 import Frcst from './13/Frcst';
 import FrcstList from './13/FrcstList';
 import Hi from './extra/Hi';
+import RecoilMain from './14/RecoilMain';
+import Rest from './15/Rest';
 
 function App() {
   return (
@@ -27,56 +29,68 @@ function App() {
       <div className="flex flex-col w-full max-w-screen-lg h-screen overflow-y-auto mx-auto">
         <header className='flex justify-between items-center text-xl font-bold h-20 p-10 bg-green-200 text-emerald-800'>
           <p className='text-xl'>React</p>
-          <ul className='flex text-base font-bold'>
+          <div>
+
+          <ul className='flex text-sm font-bold'>
             <li className='m-2 p-2'>      
-              <Link to='/pclock'>시계</Link>
+              <Link to='/clock'>시계</Link>
             </li>
             <li className='m-2 p-2'>      
-              <Link to='/plang'>언어</Link>
+              <Link to='/lang'>언어</Link>
             </li>
             <li className='m-2 p-2'>      
-              <Link to='/plotto'>로또</Link>
+              <Link to='/lotto'>로또</Link>
             </li>
             <li className='m-2 p-2'>      
-              <Link to='/pboxoffice'>박스오피스</Link>
+              <Link to='/boxoffice'>박스오피스</Link>
             </li>
             <li className='m-2 p-2'>      
-              <Link to='/pfbank'>푸드뱅크</Link>
+              <Link to='/fbank'>푸드뱅크</Link>
             </li>
             <li className='m-2 p-2'>      
-              <Link to='/paccident'>교통사고사건</Link>
+              <Link to='/accident'>교통사고사건</Link>
             </li>
             <li className='m-2 p-2'>      
-              <Link to='/ptour'>관광</Link>
+              <Link to='/tour'>관광</Link>
             </li>
             <li className='m-2 p-2'>      
-              <Link to='/pplus'>함수</Link>
+              <Link to='/plus'>함수</Link>
             </li>
             <li className='m-2 p-2'>      
-              <Link to='/pfestival'>부산축제</Link>
+              <Link to='/festival'>부산축제</Link>
             </li>
             <li className='m-2 p-2'>      
-              <Link to='/pclimate'>단기예보</Link>
+              <Link to='/climate'>단기예보</Link>
+            </li>
+            <li className='m-2 p-2'>      
+              <Link to='/recoil'>recoil</Link>
+            </li>
+            <li className='m-2 p-2'>      
+              <Link to='/rest'>rest</Link>
             </li>
           </ul>
+          </div>
           <p className='text-3xl'><Link to='/'><HiMiniHome /></Link></p>
         </header>
         <main className='grow flex flex-col justify-center items-center font-bold'>
             {/* <RouteMain/> */}
         <Routes>
             <Route path='/' element={<Hi/>}/>
-            <Route path="/pclock" element={<Clock/>}/>{/* <Clock/>  */}
+            <Route path="/clock" element={<Clock/>}/>{/* <Clock/>  */}
             <Route path="/1" element={<Mydiv/>}/>{/*<Mydiv/>*/}
-            <Route path="/plang" element={<Mylist/>}/>{/*<Mylist/> */}
-            <Route path="/plotto" element={<Lotto/>}/>{/* <Lotto/>  */}
-            <Route path="/pboxoffice" element={<Box/>}/>{/* <Box/> */}
-            <Route path="/pfbank" element={<FoodMain/>}/>{/* <FoodMain/>  */}
-            <Route path="/paccident" element={<TrafficM/>}/>{/* <TrafficM/> */}
-            <Route path="/pplus" element={<MyRdf/>}/>{/* <MyRdf/> */}
-            <Route path="/ptour" element={<Gallery/>}/>{/* <Gallery/> */}
-            <Route path="/pfestival" element={<Festival/>}/>{/* <Festival/> */}
-            <Route path="/pclimate" element={<Frcst/>}/>
-            <Route path="/pclimatelist" element={<FrcstList/>}/>
+            <Route path="/lang" element={<Mylist/>}/>{/*<Mylist/> */}
+            <Route path="/lotto" element={<Lotto/>}/>{/* <Lotto/>  */}
+            <Route path="/boxoffice" element={<Box/>}/>{/* <Box/> */}
+            <Route path="/fbank" element={<FoodMain/>}/>{/* <FoodMain/>  */}
+            <Route path="/accident" element={<TrafficM/>}/>{/* <TrafficM/> */}
+            <Route path="/plus" element={<MyRdf/>}/>{/* <MyRdf/> */}
+            <Route path="/tour" element={<Gallery/>}/>{/* <Gallery/> */}
+            <Route path="/festival" element={<Festival/>}/>{/* <Festival/> */}
+            <Route path="/climate" element={<Frcst/>}/>
+            <Route path="/climatelist" element={<FrcstList/>}/>
+            <Route path="/recoil" element={<RecoilMain/>}/>
+            <Route path="/rest" element={<Rest/>}/>
+            
         </Routes> 
         </main>
           <footer className='flex justify-between items-center text-white bg-emerald-900 h-20'>
